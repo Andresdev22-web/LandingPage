@@ -1,0 +1,195 @@
+---
+import "@/styles/global.css";
+import { Icon } from "astro-icon/components";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Max Store Development | Alianza y Soluciones Digitales</title>
+    <meta
+      name="description"
+      content="Desarrollo de bots, sistemas web, recursos para juegos y alianzas estratégicas con Max Store Development."
+    />
+  </head>
+  <body class="bg-zinc-950 text-zinc-100 min-h-screen antialiased selection:bg-purple-500 selection:text-black">
+    
+    <!-- Encabezado / Navegación -->
+    <header class="border-b border-zinc-800/80 bg-zinc-950/80 backdrop-blur sticky top-0 z-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2 text-zinc-300 hover:text-white transition-colors font-medium text-sm">
+          <Icon name="lucide:arrow-left" class="w-4 h-4" />
+          <span>Volver al inicio</span>
+        </a>
+        <div class="flex items-center gap-3 text-xs text-zinc-400">
+          <span class="px-2.5 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20 font-mono">
+            Alianza
+          </span>
+          <span>•</span>
+          <time datetime="2026-10-05">5 de Octubre, 2026</time>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+      <article class="prose prose-invert max-w-none">
+        
+        <!-- Header de la comunidad/proyecto -->
+        <header class="mb-10 pb-8 border-b border-zinc-800">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xs font-mono bg-zinc-800 text-purple-300 px-2.5 py-1 rounded-md border border-zinc-700">
+              Est. Julio 2026
+            </span>
+            <span class="text-xs text-zinc-400 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              15 en línea • 54 miembros
+            </span>
+          </div>
+          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
+            ⚡ Max Store <span class="text-purple-400">Development</span>
+          </h1>
+          <p class="text-lg text-zinc-400 leading-relaxed">
+            Development • Technology • Digital Solutions. Un espacio dedicado al desarrollo, creación y distribución de proyectos digitales, herramientas modernas y soluciones integrales para servidores y comunidades.
+          </p>
+        </header>
+
+        <!-- Tarjetas de Categorías Principales -->
+        <section class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-12">
+          <div class="bg-zinc-900/60 border border-zinc-800 p-3 rounded-lg text-center font-mono text-sm text-purple-300">
+            💻 Programación
+          </div>
+          <div class="bg-zinc-900/60 border border-zinc-800 p-3 rounded-lg text-center font-mono text-sm text-purple-300">
+            🌐 Webs
+          </div>
+          <div class="bg-zinc-900/60 border border-zinc-800 p-3 rounded-lg text-center font-mono text-sm text-purple-300">
+            🤖 Bots
+          </div>
+          <div class="bg-zinc-900/60 border border-zinc-800 p-3 rounded-lg text-center font-mono text-sm text-purple-300">
+            🐛 Bug Fix
+          </div>
+          <div class="bg-zinc-900/60 border border-zinc-800 p-3 rounded-lg text-center font-mono text-sm text-purple-300 sm:col-span-2">
+            🚀 Veyro Hosting
+          </div>
+        </section>
+
+        <!-- Sección 1: ¿Quiénes Somos? -->
+        <section class="mb-12">
+          <h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+            <Icon name="lucide:users" class="w-6 h-6 text-purple-400" />
+            ¿Quiénes Somos?
+          </h2>
+          <p class="text-zinc-300 leading-relaxed mb-4">
+            <strong class="text-white">Max Store Development</strong> es un proyecto enfocado en el desarrollo de soluciones digitales, productos y servicios para comunidades, servidores y proyectos.
+          </p>
+          <p class="text-zinc-300 leading-relaxed">
+            Nuestro objetivo es crear herramientas útiles, modernas y de calidad, mientras construimos relaciones con otras comunidades y proyectos dentro del ecosistema digital.
+          </p>
+        </section>
+
+        <!-- Sección 2: ¿Qué Ofrecemos? -->
+        <section class="mb-12">
+          <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+            <Icon name="lucide:layers" class="w-6 h-6 text-purple-400" />
+            ¿Qué Ofrecemos?
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-zinc-900/40 border border-zinc-800/80 p-4 rounded-lg flex items-start gap-3">
+              <Icon name="lucide:bot" class="w-5 h-5 text-purple-400 mt-1 shrink-0" />
+              <div>
+                <h3 class="font-bold text-white text-base mb-1">Bots para Discord</h3>
+                <p class="text-zinc-400 text-sm">Desarrollo e integración de bots a medida y sistemas automatizados para tu servidor.</p>
+              </div>
+            </div>
+
+            <div class="bg-zinc-900/40 border border-zinc-800/80 p-4 rounded-lg flex items-start gap-3">
+              <Icon name="lucide:globe" class="w-5 h-5 text-purple-400 mt-1 shrink-0" />
+              <div>
+                <h3 class="font-bold text-white text-base mb-1">Desarrollo Web</h3>
+                <p class="text-zinc-400 text-sm">Páginas web, paneles de control y plataformas digitales interactivas.</p>
+              </div>
+            </div>
+
+            <div class="bg-zinc-900/40 border border-zinc-800/80 p-4 rounded-lg flex items-start gap-3">
+              <Icon name="lucide:gamepad-2" class="w-5 h-5 text-purple-400 mt-1 shrink-0" />
+              <div>
+                <h3 class="font-bold text-white text-base mb-1">Sistemas para Juegos</h3>
+                <p class="text-zinc-400 text-sm">Desarrollo y creación de mecánicas y sistemas para plataformas de videojuegos.</p>
+              </div>
+            </div>
+
+            <div class="bg-zinc-900/40 border border-zinc-800/80 p-4 rounded-lg flex items-start gap-3">
+              <Icon name="lucide:palette" class="w-5 h-5 text-purple-400 mt-1 shrink-0" />
+              <div>
+                <h3 class="font-bold text-white text-base mb-1">Diseño y Recursos</h3>
+                <p class="text-zinc-400 text-sm">Diseños gráficos, elementos visuales y assets para potenciar tu marca o proyecto.</p>
+              </div>
+            </div>
+
+            <div class="bg-zinc-900/40 border border-zinc-800/80 p-4 rounded-lg flex items-start gap-3 md:col-span-2">
+              <Icon name="lucide:handshake" class="w-5 h-5 text-purple-400 mt-1 shrink-0" />
+              <div>
+                <h3 class="font-bold text-white text-base mb-1">Colaboraciones y Promoción</h3>
+                <p class="text-zinc-400 text-sm">Apoyo mutuo entre comunidades, proyectos en conjunto y promoción de desarrollo.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección 3: ¿Qué Buscamos? -->
+        <section class="mb-12">
+          <h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+            <Icon name="lucide:target" class="w-6 h-6 text-purple-400" />
+            ¿Qué Buscamos?
+          </h2>
+          <p class="text-zinc-300 leading-relaxed mb-4">
+            Buscamos crear <strong class="text-white">alianzas a largo plazo</strong> con comunidades, desarrolladores, proyectos y otros equipos para colaborar, compartir nuestras herramientas y ayudarnos mutuamente a crecer.
+          </p>
+          <blockquote class="border-l-4 border-purple-500 bg-purple-950/20 p-4 rounded-r-lg text-zinc-300 text-sm italic">
+            "La idea es que ambas partes puedan beneficiarse de la colaboración y crear nuevas oportunidades juntos."
+          </blockquote>
+        </section>
+
+        <!-- Call To Action / Servidor de Discord -->
+        <section class="mb-12">
+          <div class="bg-gradient-to-r from-purple-900/40 to-zinc-900 border border-purple-500/30 p-6 sm:p-8 rounded-xl text-center">
+            <h3 class="text-2xl font-extrabold text-white mb-2">¿Quieres formar parte o solicitar un proyecto?</h3>
+            <p class="text-zinc-400 text-sm mb-6 max-w-lg mx-auto">
+              Únete al servidor oficial de Discord para acceder a nuestros servicios, soporte de bug fix, hosting y alianzas comunitarias.
+            </p>
+            <a
+              href="https://discord.gg/p7eFAGPmJA"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-500 text-white font-medium px-6 py-3 rounded-lg transition-colors shadow-lg shadow-purple-600/20"
+            >
+              <Icon name="lucide:message-square" class="w-5 h-5" />
+              <span>Ir al servidor de Discord</span>
+            </a>
+          </div>
+        </section>
+
+      </article>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="border-t border-zinc-800/80 py-8 bg-zinc-950">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center text-xs text-zinc-500">
+        <p>© 2026 Max Store Development • Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
