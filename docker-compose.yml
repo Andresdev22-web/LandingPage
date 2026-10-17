@@ -1,0 +1,20 @@
+name: landingPage
+
+services:
+  frontend:
+    build: .
+    container_name: landingPage_app
+    restart: unless-stopped
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.landingPage.rule=Host(`${DOMAIN}`)"
+      - "traefik.http.routers.landingPage.entrypoints=${ENTRYPOINT}"
+      # Comentar la linea de abajo si estas en local y descomentarla si estas en produccion
+      - "traefik.http.routers.landingPage.tls.certresolver=${CERTRESOLVER}"
+      - "traefik.http.services.landingPage.loadbalancer.server.port=80"
+
+networks:
+  web:
+    external: true
